@@ -1,51 +1,56 @@
 {
-    "name": "itsa-hapi-react-server",
-    "version": "1.0.0",
-    "description": "Hapi plugin for itsa-react-server",
-    "author": [
-        {
-            "name": "Marco Asbreuk",
-            "email": "marco@itsasbreuk.nl"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itsa-server/itsa-hapi-react-server"
-    },
-    "bugs": {
-        "url": "https://github.com/itsa-server/itsa-hapi-react-server/issues"
-    },
-    "keywords": [
-        "itsa",
-        "itsasbreuk",
-        "hapi",
-        "itsa-react-server",
-        "plugin",
-        "react"
-    ],
-    "main": "plugin.js",
-    "engines": {
-        "node": "*"
-    },
-    "dependencies": {
-    },
-    "devDependencies": {
-        "chai": "^1.9.1",
-        "istanbul": "^0.3.0",
-        "jshint": "^2.5.5",
-        "mocha": "^1.21.4"
-    },
-    "scripts": {
-        "pretest": "jshint  ./lib/*.js",
-        "test": "mocha tests/*.js  && istanbul cover $(which _mocha) -- tests/*.js",
-        "lint": "jshint ./lib/*.js"
-    },
-    "homepage": "http://itsa.github.io",
-    "maintainers": [
-        {
-            "name": "Marco Asbreuk",
-            "email": "marco@itsasbreuk.nl"
-        }
-    ],
-    "license": "New BSD"
+  "name": "itsa-hapi-react-server",
+  "version": "1.0.0",
+  "description": "Hapi plugin for itsa-react-server",
+  "author": [
+    {
+      "name": "Marco Asbreuk",
+      "email": "marco@itsasbreuk.nl"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsa-server/itsa-hapi-react-server"
+  },
+  "bugs": {
+    "url": "https://github.com/itsa-server/itsa-hapi-react-server/issues"
+  },
+  "keywords": [
+    "itsa",
+    "itsasbreuk",
+    "hapi",
+    "itsa-react-server",
+    "plugin",
+    "react"
+  ],
+  "main": "./lib/plugin.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "require-reload": "^0.2.2",
+    "utils": "itsa/utils"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "istanbul": "^0.3.0",
+    "jshint": "^2.5.5",
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "pretest": "jshint  ./lib/*.js",
+    "test": "mocha tests/*.js  && istanbul cover $(which _mocha) -- tests/*.js",
+    "lint": "jshint ./lib/*.js"
+  },
+  "homepage": "http://itsa.github.io",
+  "maintainers": [
+    {
+      "name": "Marco Asbreuk",
+      "email": "marco@itsasbreuk.nl"
+    }
+  ],
+  "license": "New BSD"
 }
